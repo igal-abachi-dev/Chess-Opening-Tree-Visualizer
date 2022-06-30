@@ -41,7 +41,7 @@ function App() {
                     </Typography>
 
                     <Button
-                        component={Link} href="/about"
+                        component={Link} href="/About"
                         variant="contained"
                         color="secondary"
                         //         onClick={e => {
