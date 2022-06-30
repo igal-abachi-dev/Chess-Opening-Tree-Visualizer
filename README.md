@@ -1,4 +1,4 @@
-# React 18 (+ Vite + Yarn PnP + Redux Toolkit + TypeScript + vanilla-extract + Router v6) Project starter template
+#  Chess Opening Graph Visualizer
 
 ## stack:
 
@@ -24,6 +24,7 @@
 
 
 [Axios async-await](https://axios-http.com/docs/intro)
+
 
 ----
 
@@ -69,6 +70,11 @@ yarn add lodash date-fns react-router-dom react-helmet-async
 
 yarn add -D @types/lodash 
 
+----------
+
+yarn add @mui/material @emotion/react @emotion/styled @mui/icons-material
+
+yarn add react-flow-renderer
 
 ----------
 

@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import {Chip, Divider, ScopedCssBaseline} from '@mui/material';
 
 import {
     BrowserRouter as Router,
@@ -15,22 +16,26 @@ export function Layout() {
     return (
         <Router>
             <div className={styles.App}>
-                <nav>
-                    <ul>
-                        <li>
-                            <Link to='/'>Home</Link>
-                        </li>
-                        <li>
-                            <Link to='/About'>About</Link>
-                        </li>
-                    </ul>
-                </nav>
-                <Routes>
-                    <Route path='/About' element={<AboutPage/>}/>
-                    <Route path='/' element={<HomePage/>}/>
-                </Routes>
+                {/*<nav>*/}
+                {/*    <ul>*/}
+                {/*        <li>*/}
+                {/*            <Link to='/'>Home</Link>*/}
+                {/*        </li>*/}
+                {/*        <li>*/}
+                {/*            <Link to='/About'>About</Link>*/}
+                {/*        </li>*/}
+                {/*    </ul>*/}
+                {/*</nav>*/}
+
+                <ScopedCssBaseline>
+                    <Routes>
+                        <Route path='/About' element={<AboutPage/>}/>
+                        <Route path='/' element={<HomePage/>}/>
+                    </Routes>
+
+                </ScopedCssBaseline>
             </div>
-        </Router>);
+            </Router>);
 }
 
 export default Layout;
